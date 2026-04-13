@@ -16,7 +16,7 @@ body {
 
 /* CONTAINER */
 
-.container-fluid {
+#container {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
@@ -33,17 +33,133 @@ body {
 /* HEADER */
 
 #header {
+    z-index: 1050;
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1em 3em;
     background-color: #FFFFFF;
+    box-shadow: -1px 3px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+#header .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header i {
+    font-size: 1.4rem;
+}
+
+#header .cat-img {
+    border-radius: 50%;
+}
+
+.search-area,
+.user-secondary-area {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.search-area {
+    flex: 3;
 }
 
 
+.search-area input {
+    width: 70%;
+    padding: 0.3em 1.5em;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--light-gray);
+}
+
+.user-secondary-area {
+    flex: 1;
+}
+
+.user-secondary-area .notify {
+    border-radius: 50%;
+    transition: background-color .3s ease;
+}
+
+.user-secondary-area .notify:hover {
+    background-color: var(--light-gray);
+}
+
+.btn.perfil {
+    display: flex;   
+    align-items: center;
+    gap: 1em;
+}
+
+.user-secondary-area .perfil .cat-img {
+    height: 45px;
+    width: 45px;
+}
+
+.user-secondary-area .perfil h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.user-primary-area {
+    display: flex;
+    gap: 1.5em;
+}
+
+.user-primary-area .cat-img{
+    height: 70px;
+    width: 70px;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-data p {
+    font-size: 0.85rem;
+    font-weight: 900;
+}
+
+.user-data h2 {
+    font-size: 1.5em;
+    font-weight: 900;
+    line-height: 0.1em;
+}
+
+.user-actions {
+    display: flex;
+    gap: 2em;
+}
+
+.user-actions .btn {
+    padding: 0.5em 2.5em;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background-color: var(--blue);
+    transition: background-color .3s ease;
+}
+
+.user-actions .btn:hover {
+    background-color: var(--gray);
+}
 
 /* ASIDE */
 
 #aside {
+    z-index: 1060;
     grid-area: aside;
     background-color: var(--blue);
+    box-shadow: -1px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 
