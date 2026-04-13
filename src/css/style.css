@@ -1,0 +1,56 @@
+:root {
+    --blue: #1992D4;
+    --yellow: #F0B429;
+    --gray: #6C6C6C;
+    --dark-gray: #333333;
+    --light-gray: #E2E8F0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+
+/* CONTAINER */
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    ;
+    padding: 0 !important;
+    height: 100vh;
+}
+
+
+
+/* HEADER */
+
+#header {
+    grid-area: header;
+    background-color: #FFFFFF;
+}
+
+
+
+/* ASIDE */
+
+#aside {
+    grid-area: aside;
+    background-color: var(--blue);
+}
+
+
+
+/* MAIN */
+
+#main {
+    grid-area: main;
+    background-color: var(--light-gray);
+}
