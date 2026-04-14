@@ -225,6 +225,10 @@ body {
     row-gap: 0;
 }
 
+#main .card {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 #main h2 {
     font-size: 1.25rem;
     color: var(--dark-gray);
