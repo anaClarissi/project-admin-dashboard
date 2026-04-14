@@ -75,10 +75,10 @@ Durante o desenvolvimento deste projeto, aprimorei:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO
+git clone https://github.com/anaClarissi/project-admin-dashboard
 
 # Acesse a pasta
-cd NOME-DO-REPOSITORIO
+cd project-admin-dashboard
 
 # Abra o index.html no navegador
 ```
