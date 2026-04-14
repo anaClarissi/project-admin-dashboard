@@ -18,8 +18,8 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 280px auto;
+    grid-template-rows: 180px auto;
     grid-template-areas: 
     "aside header"
     "aside main"
@@ -38,7 +38,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2em;
     padding: 1em 3em;
     background-color: #FFFFFF;
     box-shadow: -1px 3px 5px 3px rgba(0, 0, 0, 0.1);
@@ -214,5 +213,139 @@ body {
 
 #main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "projects announcements"
+    "projects trending"
+    ;
     background-color: var(--light-gray);
+    padding: 2em 1.5em;
+    column-gap: 0.5em;
+    row-gap: 0;
+}
+
+#main h2 {
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+}
+
+#projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 1em;
+}
+
+#projects-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 0 !important;
+    width: 100%;
+}
+
+#projects-area .card {
+    border: none;
+    border-left: 8px solid var(--yellow);
+    padding: 1.5em;
+    max-width: 500px;
+    max-height: 200px;
+}
+
+#projects-area .card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#projects-area .card p {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.card-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5em;
+    width: 100%;
+}
+
+.card-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#announcements {
+    grid-area: announcements;
+}
+
+#announcenments-areas .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    border: none;
+}
+
+#announcenments-areas .card div {
+    border-bottom: 1px solid var(--gray);
+}
+
+#announcenments-areas .card div:last-child {
+    border: none;
+}
+
+#announcenments-areas h3 {
+    font-size: 0.90rem;
+    font-weight: 700;
+    margin: 0;
+}
+#announcenments-areas p {
+    font-size: 0.80rem;
+}
+
+#announcenments,
+#trending {
+    align-self: self-start;
+}
+
+#trending {
+    grid-area: trending;
+}
+
+#trending .card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+#trending .card a {
+    display: flex;
+    gap: 1em;
+}
+
+#trending .card a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#trending .card div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#trending .card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#trending .card p {
+    font-size: 0.9rem;
+    margin: 0;
 }
