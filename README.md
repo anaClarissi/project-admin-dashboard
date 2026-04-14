@@ -11,7 +11,7 @@ Projeto de dashboard desenvolvido como parte do curso de HTML e CSS do **The Odi
 
 ### 📸 Preview
 
-![Preview do projeto](./src/images/preview.png)
+![Preview do projeto](preview.png)
 
 ---
 
